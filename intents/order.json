@@ -1,0 +1,15 @@
+{
+  "questions": [
+    "I would like to order something",
+    "I am ordering",
+    "make an order",
+    "I want to order",
+    "I want to order something"
+  ],
+  "answers": [
+    "What do you want to order?",
+    "Okay, what do you want?",
+    "Okay",
+    "Yes, please tell use what you want."
+  ]
+}
