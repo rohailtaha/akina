@@ -44,7 +44,7 @@ function App() {
       </div>
 
       <Chats chats={chats} />
-
+      {/* <Suggestions suggestions={suggestions} /> */}
       <form className='chat-input' onSubmit={handleSubmit}>
         <input type='text' placeholder='Enter Message' ref={inputRef} />
         <button type='submit' className='send-btn'>
