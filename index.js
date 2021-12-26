@@ -24,9 +24,10 @@ io.on('connection', socket => {
   console.log('socket connection established!');
   socket.on('question', async question => {
     const answer = await handleQuestion(question);
-    if (!answer)
+    if (!answer) {
       socket.emit('answer', 'Please wait till we get an agent to assist you.');
-    else socket.emit('answer', answer);
+      io.emit('unanswered', question);
+    } else socket.emit('answer', answer);
   });
 });
 

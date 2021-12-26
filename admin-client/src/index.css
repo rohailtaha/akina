@@ -13,11 +13,13 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
   min-height: 100vh;
   background-color: #4f5d73;
+}
+
+.header {
+  background: white;
+  padding: 2em;
 }
 
 /* chat box section */
@@ -28,6 +30,7 @@ body {
   overflow: hidden;
   border-radius: 10px;
   position: relative;
+  margin: 2em auto;
 }
 
 /* about client */
