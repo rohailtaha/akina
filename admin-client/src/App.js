@@ -18,15 +18,13 @@ function App() {
         ...chats,
         { type: CHAT_TYPE.CUSTOMER, msg: question },
       ]);
-      socket.emit('question', inputRef.current.value);
+      socket.emit('admin-answer', inputRef.current.value);
       inputRef.current.value = '';
     }
   };
 
-  const handleQuestion = question => {
-    console.log(question);
+  const handleQuestion = question =>
     setChats(chats => [...chats, { type: CHAT_TYPE.CHATBOT, msg: question }]);
-  };
 
   useEffect(() => {
     const socket = io(SERVER);

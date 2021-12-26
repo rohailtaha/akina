@@ -29,6 +29,9 @@ io.on('connection', socket => {
       io.emit('unanswered', question);
     } else socket.emit('answer', answer);
   });
+  socket.on('admin-answer', async answer => {
+    io.emit('admin-answer', answer);
+  });
 });
 
 const port = process.env.PORT || 8000;

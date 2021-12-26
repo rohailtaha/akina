@@ -20,6 +20,8 @@ body {
 .header {
   background: white;
   padding: 2em;
+  color: red;
+  font-weight: bold;
 }
 
 /* chat box section */

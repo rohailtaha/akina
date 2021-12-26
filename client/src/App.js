@@ -29,6 +29,7 @@ function App() {
     const socket = io(SERVER);
     setSocket(socket);
     socket.on('answer', handleAnswer);
+    socket.on('admin-answer', handleAnswer);
 
     return () => socket.close();
   }, []);
